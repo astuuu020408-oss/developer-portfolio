@@ -1,34 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Developer Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #fff0f5;
-            text-align: center;
-            padding: 50px;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-        h1 {
-            color: #d63384;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: #fff7fb;
+    color: #333;
+}
 
-        p {
-            color: #444;
-            font-size: 18px;
-        }
-    </style>
+header {
+    background: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: #d63384;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #d63384;
+}
+
+section {
+    padding: 65px 10%;
+}
+
+.hero {
+    text-align: center;
+    background: #ffe4f0;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #c02670;
+}
+
+.hero p {
+    margin: 20px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d63384;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+h2 {
+    color: #c02670;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ead4df;
+}
+
+footer {
+    text-align: center;
+    background: #f8d6e6;
+    padding: 25px;
+}
+</style>
 </head>
 
 <body>
-    <h1>Welcome to My Portfolio!</h1>
-    <h2>Hello, I'm a Computer Science Student</h2>
-    <p>I am interested in technology, programming and web development.</p>
-    <h2>My Skills</h2>
-    <p>Python | HTML | CSS</p>
+
+<header>
+    <div class="logo">My Portfolio</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Hello, I'm Soumya!</h1>
+    <p>Computer Science Student | AI & ML Enthusiast</p>
+    <a href="#about" class="btn">Explore My Portfolio</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>I am a first-year Computer Science student interested in
+        technology, programming and artificial intelligence.
+        I enjoy learning new skills and building creative projects.</p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <h3>B.Tech – CSE (AI & ML)</h3>
+        <p>K.R. Mangalam University</p>
+        <p>Currently pursuing</p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Skills & Projects</h2>
+    <div class="card">
+        <h3>Technical Skills</h3>
+        <p>Python | HTML | CSS | Git | GitHub</p>
+    </div>
+    <div class="card">
+        <h3>Developer Portfolio</h3>
+        <p>A personal website created using HTML and CSS.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+        <p>GitHub:
+        <a href="https://github.com/astuuu020408-oss" target="_blank">
+        Visit My GitHub</a></p>
+        <p>LinkedIn: Add your LinkedIn profile link here.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Soumya | My Developer Portfolio</p>
+</footer>
+
 </body>
 </html>
